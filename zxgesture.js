@@ -3,8 +3,8 @@
 Module.register("zxgesture",{
 
 		defaults: {
-				height:"300px",
-				width:"100%",
+                width:"500px",
+                height:"500px",
 			    images:""
 		},
 
@@ -31,6 +31,7 @@ Module.register("zxgesture",{
 	getDom: function() {
         this.img = document.createElement("img");
 		this.img.src = "https://drscdn.500px.org/photo/119552959/m%3D900/18e7ff6544d219ccbe7286a30276a560";
+        this.img.style.width = this.config.width;
 		return this.img;
 	},
 
