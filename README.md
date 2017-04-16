@@ -20,7 +20,7 @@ cd zxgesture
 
 Install the dependencies:
 ````
-npm install --production
+npm install
 ````
 
 ## Wiring
