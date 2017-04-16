@@ -1,0 +1,22 @@
+{
+  "name": "zxgesture",
+  "version": "0.1.1",
+  "description": "Sparkfun ZX Gesture sensor",
+  "main": "zxgesture.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muharremtac/zxgesture.git"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/electron-rebuild -v 1.4.7 -e ../../node_modules/electron-prebuilt"
+  },
+  "homepage": "https://github.com/muharremtac/zxgesture#readme",
+  "author": "Muharrem Tac",
+  "license": "MIT",
+  "dependencies": {
+    "i2c-bus": "latest"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.4.1"
+  }
+}
