@@ -7,21 +7,21 @@ Module.register("zxgesture",{
 				width:"100%",
 			    images:""
 		},
-		
+
 		start: function () {
 			var self = this;
 			var img;
-					
-			self.sendSocketNotification("GESTURE_START", self.config);				
+
+			self.sendSocketNotification("ZXGESTURE_START", self.config);
 		},
-		
+
 		socketNotificationReceived: function(notification, payload) {
-		
-			if(notification === 'GESTURE' && payload === 'SwipeRight') {
+
+			if(notification === 'ZXGESTURE' && payload === 'SwipeRight') {
 				this.changeImage(-1);
-				console.log('**************zxgesture MODULE Swipe Right**********');	
+				console.log('**************zxgesture MODULE Swipe Right**********');
 			}
-			if(notification === 'GESTURE' && payload === 'SwipeLeft') {
+			if(notification === 'ZXGESTURE' && payload === 'SwipeLeft') {
 				this.changeImage();
 				console.log('**************zxgesture MODULE Swipe Left**********');
 			}
@@ -34,7 +34,7 @@ Module.register("zxgesture",{
 		return this.img;
 	},
 
-	 changeImage: function(dir) {        
+	 changeImage: function(dir) {
 		var imgs = this.config.images;
 		 if(imgs==="") {
 			 imgs=["https://drscdn.500px.org/photo/119552959/m%3D900/18e7ff6544d219ccbe7286a30276a560",

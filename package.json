@@ -1,7 +1,7 @@
 {
   "name": "zxgesture",
   "version": "0.1.1",
-  "description": "Sparkfun ZX Gesture sensor",
+  "description": "Sparkfun ZX Gesture sensor MagicMirror module",
   "main": "zxgesture.js",
   "repository": {
     "type": "git",
