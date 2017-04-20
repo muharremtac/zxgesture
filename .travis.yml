@@ -4,6 +4,6 @@ python:
 node_js:
     - "7"
 before_install: 
-    - sudo apt-get install python
+    - sudo apt-get install nodejs-legacy
     - npm install -g grunt-cli
 install: npm install
